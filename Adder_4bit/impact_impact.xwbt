@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\ic\Adder_4bit\impact.xsl
+OUTFILE=E:\ic\Adder_4bit\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=E:\ic\Adder_4bit
+LICENSE=iMPACT
+USER_INFO=iMPACT

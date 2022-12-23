@@ -1,0 +1,5 @@
+set -tmpdir "E:/ic/up8bit_chooseud/xst/projnav.tmp"
+set -xsthdpdir "E:/ic/up8bit_chooseud/xst"
+elaborate
+-ifn Clock_div.prj
+-ifmt mixed

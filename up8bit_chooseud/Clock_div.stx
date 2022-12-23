@@ -1,0 +1,35 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/ic/up8bit_chooseud/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to E:/ic/up8bit_chooseud/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Clock_div.v" in library work
+ERROR:HDLCompilers:26 - "Clock_div.v" line 36 unexpected token: 'next'
+ERROR:HDLCompilers:26 - "Clock_div.v" line 36 unexpected token: 'state'
+ERROR:HDLCompilers:26 - "Clock_div.v" line 36 unexpected token: 'logic'
+ERROR:HDLCompilers:26 - "Clock_div.v" line 47 expecting 'end', found 'endmodule'
+Module <Clock_div> compiled
+ERROR:HDLCompilers:26 - "Clock_div.v" line 47 expecting 'endmodule', found 'EOF'
+Analysis of file <"Clock_div.prj"> failed.
+--> 
+
+Total memory usage is 4468252 kilobytes
+
+Number of errors   :    5 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

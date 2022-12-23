@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Sep 15 14:04:06 2022
+# Process ID: 1768
+# Log file: E:/ic/Shift_SIPO/planAhead_run_1/planAhead.log
+# Journal file: E:/ic/Shift_SIPO/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/ic/Shift_SIPO/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

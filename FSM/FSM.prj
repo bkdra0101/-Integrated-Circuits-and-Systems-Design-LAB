@@ -1,0 +1,3 @@
+verilog work "Counter8bs.v"
+verilog work "button.v"
+verilog work "FSM.v"

@@ -1,0 +1,4 @@
+verilog work "Mux41.v"
+verilog work "CounterUD.v"
+verilog work "Clock_div.v"
+verilog work "LED_COUNTER.v"

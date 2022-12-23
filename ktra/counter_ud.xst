@@ -1,0 +1,5 @@
+set -tmpdir "E:/ic/ktra/xst/projnav.tmp"
+set -xsthdpdir "E:/ic/ktra/xst"
+elaborate
+-ifn counter_ud.prj
+-ifmt mixed

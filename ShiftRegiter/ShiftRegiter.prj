@@ -1,0 +1,3 @@
+verilog work "Shift_SISO.v"
+verilog work "Clock_1Hz.v"
+verilog work "ShiftRegiter.v"

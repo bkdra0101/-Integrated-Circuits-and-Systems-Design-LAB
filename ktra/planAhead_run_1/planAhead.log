@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Oct 06 13:35:32 2022
+# Process ID: 14404
+# Log file: E:/ic/ktra/planAhead_run_1/planAhead.log
+# Journal file: E:/ic/ktra/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -36 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source E:/ic/ktra/pa.fromHdl.tcl
+# create_project -name ktra -dir "E:/ic/ktra/planAhead_run_1" -part xc3s500efg320-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "counter_ud.ucf" [current_fileset -constrset]
+Adding file 'E:/ic/ktra/counter_ud.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {CounterUD.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Clock_div.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {counter_ud.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top counter_ud $srcset
+# add_files [list {counter_ud.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+Using Verific elaboration
+Parsing VHDL file "C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "E:/ic/ktra/CounterUD.v" into library work
+Analyzing Verilog file "E:/ic/ktra/Clock_div.v" into library work
+Analyzing Verilog file "E:/ic/ktra/counter_ud.v" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Users/DELL/Music/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [E:/ic/ktra/counter_ud.ucf]
+Finished Parsing UCF File [E:/ic/ktra/counter_ud.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: b74b3558
+open_rtl_design: Time (s): elapsed = 00:00:05 . Memory (MB): peak = 576.395 ; gain = 156.016
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  reset]]
+set_property package_pin "" [get_ports [list  clk]]
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports UD]
+endgroup
+set_property package_pin "" [get_ports [list  {LED[0]}]]
+startgroup
+set_property package_pin F12 [get_ports {LED[0]}]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin F11 [get_ports {LED[3]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See E:/ic/ktra\planAhead_pid14404.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Oct 06 13:38:13 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

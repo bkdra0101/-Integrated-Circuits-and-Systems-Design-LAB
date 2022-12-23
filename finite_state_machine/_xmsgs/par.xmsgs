@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Par" num="282" delta="old" >No user timing constraints were detected or you have set the option to ignore timing constraints (&quot;par -x&quot;). Place and Route will run in &quot;Performance Evaluation Mode&quot; to automatically improve the performance of all internal clocks in this design. Because there are not defined timing requirements, a timing score will not be reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock. Note: For the fastest runtime, set the effort level to &quot;std&quot;.  For best performance, set the effort level to &quot;high&quot;.
+</msg>
+
+<msg type="error" file="Place" num="864" delta="new" >Incompatible IOB&apos;s are locked to the same bank <arg fmt="%d" index="1">0</arg>
+Conflicting IO Standards are:
+IO Standard 1: <arg fmt="%s" index="2">Name = LVTTL, VREF = NR, VCCO = 3.30, TERM = NONE, DIR = OUTPUT, DRIVE_STR = NR
+</arg><arg fmt="%s" index="3">List of locked IOB&apos;s:
+	Y&lt;1&gt;
+	Y&lt;2&gt;
+	y&lt;1&gt;
+	y&lt;2&gt;
+
+</arg>IO Standard 2: <arg fmt="%s" index="4">Name = LVCMOS25, VREF = NR, VCCO = 2.50, TERM = NONE, DIR = OUTPUT, DRIVE_STR = NR
+</arg><arg fmt="%s" index="5">List of locked IOB&apos;s:
+	z
+
+</arg>These IO Standards are incompatible due to <arg fmt="%s" index="6">VCCO mismatch.
+</arg>
+</msg>
+
+<msg type="error" file="Place" num="864" delta="new" >Incompatible IOB&apos;s are locked to the same bank <arg fmt="%d" index="1">0</arg>
+Conflicting IO Standards are:
+IO Standard 1: <arg fmt="%s" index="2">Name = LVCMOS25, VREF = NR, VCCO = 2.50, TERM = NONE, DIR = OUTPUT, DRIVE_STR = NR
+</arg><arg fmt="%s" index="3">List of locked IOB&apos;s:
+	z
+
+</arg>IO Standard 2: <arg fmt="%s" index="4">Name = LVTTL, VREF = NR, VCCO = 3.30, TERM = NONE, DIR = INPUT, DRIVE_STR = NR
+</arg><arg fmt="%s" index="5">List of locked IOB&apos;s:
+	Clock
+
+</arg>These IO Standards are incompatible due to <arg fmt="%s" index="6">VCCO mismatch.
+</arg>
+</msg>
+
+<msg type="warning" file="ParHelpers" num="360" delta="new" >Design is not completely routed.
+
+</msg>
+
+<msg type="warning" file="Par" num="100" delta="new" >Design is not completely routed. There are <arg fmt="%d" index="1">10</arg> signals that are not
+completely routed in this design. See the &quot;<arg fmt="%s" index="2">simple.unroutes</arg>&quot; file for a list of
+all unrouted signals. Check for other warnings in your PAR report that might
+indicate why these nets are unroutable. These nets can also be evaluated
+in FPGA Editor by selecting &quot;Unrouted Nets&quot; in the List Window.
+
+</msg>
+
+</messages>
+

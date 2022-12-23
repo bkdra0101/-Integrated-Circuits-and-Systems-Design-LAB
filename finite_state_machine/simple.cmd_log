@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "E:/ic/finite_state_machine/simple.xst" -ofn "E:/ic/finite_state_machine/simple.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 simple.ngc simple.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o simple_map.ncd simple.ngd simple.pcf 
+par -w -intstyle ise -ol high -t 1 simple_map.ncd simple.ncd simple.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml simple.twx simple.ncd -o simple.twr simple.pcf 
+bitgen -intstyle ise -f simple.ut simple.ncd 
+xst -intstyle ise -ifn "E:/ic/finite_state_machine/simple.xst" -ofn "E:/ic/finite_state_machine/simple.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simple.ucf -p xc3s500e-fg320-4 simple.ngc simple.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o simple_map.ncd simple.ngd simple.pcf 
+par -w -intstyle ise -ol high -t 1 simple_map.ncd simple.ncd simple.pcf 

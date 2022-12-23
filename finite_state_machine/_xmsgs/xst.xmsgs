@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2616" delta="new" ><arg fmt="%s" index="1">&quot;simple.v&quot; line 23:</arg> Name conflict. (&lt;<arg fmt="%s" index="2">Y</arg>&gt; and &lt;<arg fmt="%s" index="3">y</arg>&gt;, renaming <arg fmt="%s" index="4">Y</arg> as <arg fmt="%s" index="5">Y_rnm0</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="863" delta="new" >&quot;<arg fmt="%s" index="1">simple.v</arg>&quot; line <arg fmt="%d" index="2">23</arg>: Name conflict (<arg fmt="%s" index="3">&lt;Y&gt; and &lt;y&gt;, renaming Y as y_rnm0</arg>).
+</msg>
+
+</messages>
+

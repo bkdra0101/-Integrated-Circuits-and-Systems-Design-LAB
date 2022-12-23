@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;Counter4bit.v&quot; line 43 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;r_next&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="42" delta="old" ><arg fmt="%s" index="1">&quot;Counter4bit.v&quot; line 43 </arg>Illegal left hand side of procedural assign
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;Counter4bit.v&quot; line 46 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;q&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="42" delta="old" ><arg fmt="%s" index="1">&quot;Counter4bit.v&quot; line 46 </arg>Illegal left hand side of procedural assign
+</msg>
+
+</messages>
+

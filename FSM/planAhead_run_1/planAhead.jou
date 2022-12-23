@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Sep 22 14:51:28 2022
+# Process ID: 3604
+# Log file: E:/ic/FSM/planAhead_run_1/planAhead.log
+# Journal file: E:/ic/FSM/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/ic/FSM/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin N17 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin K17 [get_ports btn]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {q[0]}]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports {q[1]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports {q[2]}]
+endgroup
+startgroup
+set_property package_pin F11 [get_ports {q[3]}]
+endgroup
+startgroup
+set_property package_pin C11 [get_ports {q[4]}]
+endgroup
+startgroup
+set_property package_pin D11 [get_ports {q[5]}]
+endgroup
+startgroup
+set_property package_pin E9 [get_ports {q[6]}]
+endgroup
+startgroup
+set_property package_pin F9 [get_ports {q[7]}]
+endgroup
+set_property iostandard LVTTL [get_ports [list {q[7]} {q[6]} {q[5]} {q[4]} {q[3]} {q[2]} {q[1]} {q[0]}]]
+set_property pulltype PULLUP [get_ports [list reset]]
+set_property pulltype PULLDOWN [get_ports [list btn]]
+save_constraints

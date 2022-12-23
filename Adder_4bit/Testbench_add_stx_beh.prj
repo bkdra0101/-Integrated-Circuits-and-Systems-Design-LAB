@@ -1,0 +1,4 @@
+verilog isim_temp "FullAdder.v"
+verilog isim_temp "Adder_4bit.v"
+verilog isim_temp "Testbench_add.v"
+verilog isim_temp "C:/Users/DELL/Music/14.7/ISE_DS/ISE//verilog/src/glbl.v"

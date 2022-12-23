@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\ic\countermode_nhap\Counter4bit.ncd
+OUTFILE=E:\ic\countermode_nhap\Counter4bit.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=E:\ic\countermode_nhap
+LICENSE=ISE
+USER_INFO=212268666_0_0_122

@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "E:/ic/ktra/counter_ud.xst" -ofn "E:/ic/ktra/counter_ud.syr" 
+xst -intstyle ise -ifn "E:/ic/ktra/counter_ud.xst" -ofn "E:/ic/ktra/counter_ud.syr" 
+xst -intstyle ise -ifn "E:/ic/ktra/counter_ud.xst" -ofn "E:/ic/ktra/counter_ud.syr" 
+xst -intstyle ise -ifn "E:/ic/ktra/counter_ud.xst" -ofn "E:/ic/ktra/counter_ud.syr" 
+xst -intstyle ise -ifn "E:/ic/ktra/counter_ud.xst" -ofn "E:/ic/ktra/counter_ud.syr" 
+xst -intstyle ise -ifn "E:/ic/ktra/counter_ud.xst" -ofn "E:/ic/ktra/counter_ud.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter_ud.ucf -p xc3s500e-fg320-4 counter_ud.ngc counter_ud.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o counter_ud_map.ncd counter_ud.ngd counter_ud.pcf 
+par -w -intstyle ise -ol high -t 1 counter_ud_map.ncd counter_ud.ncd counter_ud.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter_ud.twx counter_ud.ncd -o counter_ud.twr counter_ud.pcf -ucf counter_ud.ucf 
+bitgen -intstyle ise -f counter_ud.ut counter_ud.ncd 
+xst -intstyle ise -ifn "E:/ic/ktra/counter_ud.xst" -ofn "E:/ic/ktra/counter_ud.syr" 
+xst -intstyle ise -ifn "E:/ic/ktra/counter_ud.xst" -ofn "E:/ic/ktra/counter_ud.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter_ud.ucf -p xc3s500e-fg320-4 counter_ud.ngc counter_ud.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o counter_ud_map.ncd counter_ud.ngd counter_ud.pcf 
+par -w -intstyle ise -ol high -t 1 counter_ud_map.ncd counter_ud.ncd counter_ud.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter_ud.twx counter_ud.ncd -o counter_ud.twr counter_ud.pcf -ucf counter_ud.ucf 
+bitgen -intstyle ise -f counter_ud.ut counter_ud.ncd 

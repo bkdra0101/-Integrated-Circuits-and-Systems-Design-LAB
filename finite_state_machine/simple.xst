@@ -1,0 +1,5 @@
+set -tmpdir "E:/ic/finite_state_machine/xst/projnav.tmp"
+set -xsthdpdir "E:/ic/finite_state_machine/xst"
+elaborate
+-ifn simple.prj
+-ifmt mixed

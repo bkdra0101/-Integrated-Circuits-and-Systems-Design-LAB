@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "E:/ic/SynCounter4bit/TestCounter_isim_beh.exe" -prj "E:/ic/SynCounter4bit/TestCounter_beh.prj" "work.TestCounter" "work.glbl" 

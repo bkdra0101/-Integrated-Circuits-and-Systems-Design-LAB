@@ -1,0 +1,28 @@
+Command line:
+   SPIMaster_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60961
+
+Sat Dec 11 13:16:44 2021
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5149.96 Meg
+
+ Total Signals          : 28
+ Total Nets             : 61
+ Total Signal Drivers   : 20
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 25
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 194
+
+ Total Simulation Time: 0.015625 sec
+
+ Current Memory Usage: 4678.1 Meg
+
+Sat Dec 11 13:23:02 2021
+

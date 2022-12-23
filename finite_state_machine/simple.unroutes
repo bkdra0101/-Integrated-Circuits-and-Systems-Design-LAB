@@ -1,0 +1,21 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Oct 13 13:43:51 2022
+
+10 signals are not completely routed.
+
+WARNING:ParHelpers:360 - Design is not completely routed.
+
+   Clock_BUFGP
+   Clock_BUFGP/IBUFG
+   GLOBAL_LOGIC1
+   Resetn_IBUF
+   Y_rnm0_1_OBUF
+   Y_rnm0_2_OBUF
+   w_IBUF
+   y_1
+   y_2
+   z_OBUF
+
+

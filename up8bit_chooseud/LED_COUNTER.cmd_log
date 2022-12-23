@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "E:/ic/up8bit_chooseud/LED_COUNTER.xst" -ofn "E:/ic/up8bit_chooseud/LED_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LED_COUNTER.ucf -p xc3s500e-fg320-4 LED_COUNTER.ngc LED_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LED_COUNTER_map.ncd LED_COUNTER.ngd LED_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 LED_COUNTER_map.ncd LED_COUNTER.ncd LED_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LED_COUNTER.twx LED_COUNTER.ncd -o LED_COUNTER.twr LED_COUNTER.pcf -ucf LED_COUNTER.ucf 
+bitgen -intstyle ise -f LED_COUNTER.ut LED_COUNTER.ncd 
+xst -intstyle ise -ifn "E:/ic/up8bit_chooseud/LED_COUNTER.xst" -ofn "E:/ic/up8bit_chooseud/LED_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LED_COUNTER.ucf -p xc3s500e-fg320-4 LED_COUNTER.ngc LED_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LED_COUNTER_map.ncd LED_COUNTER.ngd LED_COUNTER.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LED_COUNTER_map.ncd LED_COUNTER.ngd LED_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 LED_COUNTER_map.ncd LED_COUNTER.ncd LED_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LED_COUNTER.twx LED_COUNTER.ncd -o LED_COUNTER.twr LED_COUNTER.pcf -ucf LED_COUNTER.ucf 
+bitgen -intstyle ise -f LED_COUNTER.ut LED_COUNTER.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LED_COUNTER.ucf -p xc3s500e-fg320-4 LED_COUNTER.ngc LED_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LED_COUNTER_map.ncd LED_COUNTER.ngd LED_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 LED_COUNTER_map.ncd LED_COUNTER.ncd LED_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LED_COUNTER.twx LED_COUNTER.ncd -o LED_COUNTER.twr LED_COUNTER.pcf -ucf LED_COUNTER.ucf 
+bitgen -intstyle ise -f LED_COUNTER.ut LED_COUNTER.ncd 
+bitgen -intstyle ise -f LED_COUNTER.ut LED_COUNTER.ncd 
+bitgen -intstyle ise -f LED_COUNTER.ut LED_COUNTER.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LED_COUNTER.ucf -p xc3s500e-fg320-4 LED_COUNTER.ngc LED_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LED_COUNTER_map.ncd LED_COUNTER.ngd LED_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 LED_COUNTER_map.ncd LED_COUNTER.ncd LED_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LED_COUNTER.twx LED_COUNTER.ncd -o LED_COUNTER.twr LED_COUNTER.pcf -ucf LED_COUNTER.ucf 
+bitgen -intstyle ise -f LED_COUNTER.ut LED_COUNTER.ncd 

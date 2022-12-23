@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Sep 08 14:07:39 2022
+# Process ID: 8792
+# Log file: E:/ic/counterup/planAhead_run_1/planAhead.log
+# Journal file: E:/ic/counterup/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/ic/counterup/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

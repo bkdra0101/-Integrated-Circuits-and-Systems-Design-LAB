@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="93" delta="old" ><arg fmt="%s" index="1">&quot;ShiftRegiter.v&quot; line 30 </arg>Too few port connections in instance &apos;<arg fmt="%s" index="2">SISO</arg>&apos; of module &apos;<arg fmt="%s" index="3">Shift_SISO</arg>&apos;
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">s_out</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">clockdivider</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SISO</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SISO/r_reg_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SISO/r_reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SISO/r_reg_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SISO/r_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockdivider/r_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ShiftRegiter</arg>&gt;.
+</msg>
+
+</messages>
+

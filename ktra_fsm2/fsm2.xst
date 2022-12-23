@@ -1,0 +1,5 @@
+set -tmpdir "E:/ic/ktra_fsm2/xst/projnav.tmp"
+set -xsthdpdir "E:/ic/ktra_fsm2/xst"
+elaborate
+-ifn fsm2.prj
+-ifmt mixed

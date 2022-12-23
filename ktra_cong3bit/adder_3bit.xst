@@ -1,0 +1,5 @@
+set -tmpdir "E:/ic/ktra_cong3bit/xst/projnav.tmp"
+set -xsthdpdir "E:/ic/ktra_cong3bit/xst"
+elaborate
+-ifn adder_3bit.prj
+-ifmt mixed

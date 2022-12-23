@@ -1,0 +1,32 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/ic/SynCounter4bit/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to E:/ic/SynCounter4bit/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SynCounter4bit.v" in library work
+Module <SynCounter4bit> compiled
+ERROR:HDLCompilers:247 - "SynCounter4bit.v" line 40 Reference to scalar wire 'reset' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:106 - "SynCounter4bit.v" line 40 Illegal left hand side of nonblocking assignment
+Analysis of file <"SynCounter4bit.prj"> failed.
+--> 
+
+Total memory usage is 4468264 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

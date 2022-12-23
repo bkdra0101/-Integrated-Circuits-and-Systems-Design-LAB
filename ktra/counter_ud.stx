@@ -1,0 +1,36 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/ic/ktra/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to E:/ic/ktra/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "CounterUD.v" in library work
+ERROR:HDLCompilers:26 - "CounterUD.v" line 40 expecting ':', found ')'
+ERROR:HDLCompilers:26 - "CounterUD.v" line 40 unexpected token: ';'
+Compiling verilog file "counter_ud.v" in library work
+ERROR:HDLCompilers:26 - "counter_ud.v" line 22 expecting ')', found ','
+ERROR:HDLCompilers:26 - "counter_ud.v" line 24 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "counter_ud.v" line 24 expecting '=', found ','
+Module <CounterUD> compiled
+Analysis of file <"counter_ud.prj"> failed.
+--> 
+
+Total memory usage is 4468260 kilobytes
+
+Number of errors   :    5 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

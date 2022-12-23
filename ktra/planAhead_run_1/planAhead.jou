@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Oct 06 13:35:32 2022
+# Process ID: 14404
+# Log file: E:/ic/ktra/planAhead_run_1/planAhead.log
+# Journal file: E:/ic/ktra/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/ic/ktra/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  reset]]
+set_property package_pin "" [get_ports [list  clk]]
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports UD]
+endgroup
+set_property package_pin "" [get_ports [list  {LED[0]}]]
+startgroup
+set_property package_pin F12 [get_ports {LED[0]}]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin F11 [get_ports {LED[3]}]
+endgroup
+save_constraints

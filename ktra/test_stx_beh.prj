@@ -1,0 +1,4 @@
+verilog isim_temp "CounterUD.v"
+verilog isim_temp "counter_ud.v"
+verilog isim_temp "test.v"
+verilog isim_temp "C:/Users/DELL/Music/14.7/ISE_DS/ISE//verilog/src/glbl.v"

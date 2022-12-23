@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\ic\Shift_SIPO\ShiftRegiter.ncd
+OUTFILE=E:\ic\Shift_SIPO\ShiftRegiter.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=E:\ic\Shift_SIPO
+LICENSE=ISE
+USER_INFO=212268666_0_0_122

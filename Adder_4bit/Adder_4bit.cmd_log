@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "E:/ic/Adder_4bit/Adder_4bit.xst" -ofn "E:/ic/Adder_4bit/Adder_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Adder_4bit.ucf -p xc3s500e-fg320-4 Adder_4bit.ngc Adder_4bit.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Adder_4bit.ucf -p xc3s500e-fg320-4 Adder_4bit.ngc Adder_4bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Adder_4bit_map.ncd Adder_4bit.ngd Adder_4bit.pcf 
+par -w -intstyle ise -ol high -t 1 Adder_4bit_map.ncd Adder_4bit.ncd Adder_4bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Adder_4bit.twx Adder_4bit.ncd -o Adder_4bit.twr Adder_4bit.pcf -ucf Adder_4bit.ucf 
+bitgen -intstyle ise -f Adder_4bit.ut Adder_4bit.ncd 

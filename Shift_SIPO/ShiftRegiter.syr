@@ -1,0 +1,447 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: ShiftRegiter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ShiftRegiter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ShiftRegiter"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : ShiftRegiter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Shift_SIPO.v" in library work
+Compiling verilog file "Clock_1Hz.v" in library work
+Module <Shift_SIPO> compiled
+Compiling verilog file "ShiftRegiter.v" in library work
+Module <Clock_1Hz> compiled
+Module <ShiftRegiter> compiled
+No errors in compilation
+Analysis of file <"ShiftRegiter.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <ShiftRegiter> in library <work>.
+
+Analyzing hierarchy for module <Clock_1Hz> in library <work> with parameters.
+	M = "00000010111110101111000010000000"
+	N = "00000000000000000000000000011110"
+
+Analyzing hierarchy for module <Shift_SIPO> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <ShiftRegiter>.
+Module <ShiftRegiter> is correct for synthesis.
+ 
+Analyzing module <Clock_1Hz> in library <work>.
+	M = 32'sb00000010111110101111000010000000
+	N = 32'sb00000000000000000000000000011110
+Module <Clock_1Hz> is correct for synthesis.
+ 
+Analyzing module <Shift_SIPO> in library <work>.
+Module <Shift_SIPO> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Clock_1Hz>.
+    Related source file is "Clock_1Hz.v".
+    Found 30-bit adder for signal <r_next$addsub0000> created at line 33.
+    Found 30-bit comparator greatequal for signal <r_next$cmp_ge0000> created at line 33.
+    Found 30-bit register for signal <r_reg>.
+    Summary:
+	inferred  30 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Clock_1Hz> synthesized.
+
+
+Synthesizing Unit <Shift_SIPO>.
+    Related source file is "Shift_SIPO.v".
+    Found 8-bit register for signal <r_reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Shift_SIPO> synthesized.
+
+
+Synthesizing Unit <ShiftRegiter>.
+    Related source file is "ShiftRegiter.v".
+Unit <ShiftRegiter> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 30-bit adder                                          : 1
+# Registers                                            : 2
+ 30-bit register                                       : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 30-bit comparator greatequal                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 30-bit adder                                          : 1
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+# Comparators                                          : 1
+ 30-bit comparator greatequal                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ShiftRegiter> ...
+
+Optimizing unit <Clock_1Hz> ...
+
+Optimizing unit <Shift_SIPO> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ShiftRegiter, actual ratio is 0.
+FlipFlop SIPO/r_reg_7 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+Processing Unit <ShiftRegiter> :
+	Found 2-bit shift register for signal <SIPO/r_reg_6>.
+Unit <ShiftRegiter> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ShiftRegiter.ngr
+Top Level Output File Name         : ShiftRegiter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 113
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 33
+#      LUT4                        : 4
+#      MUXCY                       : 40
+#      VCC                         : 1
+#      XORCY                       : 30
+# FlipFlops/Latches                : 38
+#      FD_1                        : 8
+#      FDR                         : 30
+# Shift Registers                  : 1
+#      SRL16_1                     : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       26  out of   4656     0%  
+ Number of Slice Flip Flops:             37  out of   9312     0%  
+ Number of 4 input LUTs:                 42  out of   9312     0%  
+    Number used as logic:                41
+    Number used as Shift registers:       1
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    232     4%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 30    |
+clockdivider/r_reg_25              | NONE(SIPO/r_reg_5)     | 9     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.416ns (Maximum Frequency: 184.652MHz)
+   Minimum input arrival time before clock: 2.086ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.416ns (frequency: 184.652MHz)
+  Total number of paths / destination ports: 1155 / 60
+-------------------------------------------------------------------------
+Delay:               5.416ns (Levels of Logic = 12)
+  Source:            clockdivider/r_reg_7 (FF)
+  Destination:       clockdivider/r_reg_29 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clockdivider/r_reg_7 to clockdivider/r_reg_29
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  clockdivider/r_reg_7 (clockdivider/r_reg_7)
+     LUT1:I0->O            1   0.704   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<0>_rt (clockdivider/Mcompar_r_next_cmp_ge0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<0> (clockdivider/Mcompar_r_next_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<1> (clockdivider/Mcompar_r_next_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<2> (clockdivider/Mcompar_r_next_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<3> (clockdivider/Mcompar_r_next_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<4> (clockdivider/Mcompar_r_next_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<5> (clockdivider/Mcompar_r_next_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<6> (clockdivider/Mcompar_r_next_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<7> (clockdivider/Mcompar_r_next_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<8> (clockdivider/Mcompar_r_next_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  clockdivider/Mcompar_r_next_cmp_ge0000_cy<9> (clockdivider/Mcompar_r_next_cmp_ge0000_cy<9>)
+     MUXCY:CI->O          30   0.331   1.262  clockdivider/Mcompar_r_next_cmp_ge0000_cy<10> (clockdivider/r_next_cmp_ge0000)
+     FDR:R                     0.911          clockdivider/r_reg_0
+    ----------------------------------------
+    Total                      5.416ns (3.532ns logic, 1.884ns route)
+                                       (65.2% logic, 34.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockdivider/r_reg_25'
+  Clock period: 4.014ns (frequency: 249.128MHz)
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Delay:               4.014ns (Levels of Logic = 0)
+  Source:            SIPO/Mshreg_r_reg_6 (FF)
+  Destination:       SIPO/r_reg_6 (FF)
+  Source Clock:      clockdivider/r_reg_25 falling
+  Destination Clock: clockdivider/r_reg_25 falling
+
+  Data Path: SIPO/Mshreg_r_reg_6 to SIPO/r_reg_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16_1:CLK->Q        1   3.706   0.000  SIPO/Mshreg_r_reg_6 (SIPO/Mshreg_r_reg_6)
+     FD_1:D                    0.308          SIPO/r_reg_6
+    ----------------------------------------
+    Total                      4.014ns (4.014ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clockdivider/r_reg_25'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.086ns (Levels of Logic = 1)
+  Source:            s_in (PAD)
+  Destination:       SIPO/Mshreg_r_reg_6 (FF)
+  Destination Clock: clockdivider/r_reg_25 falling
+
+  Data Path: s_in to SIPO/Mshreg_r_reg_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.447  s_in_IBUF (s_in_IBUF)
+     SRL16_1:D                 0.421          SIPO/Mshreg_r_reg_6
+    ----------------------------------------
+    Total                      2.086ns (1.639ns logic, 0.447ns route)
+                                       (78.6% logic, 21.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clockdivider/r_reg_25'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            SIPO/r_reg_6 (FF)
+  Destination:       q<6> (PAD)
+  Source Clock:      clockdivider/r_reg_25 falling
+
+  Data Path: SIPO/r_reg_6 to q<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             2   0.591   0.447  SIPO/r_reg_6 (SIPO/r_reg_6)
+     OBUF:I->O                 3.272          q_6_OBUF (q<6>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.44 secs
+ 
+--> 
+
+Total memory usage is 4497496 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,24 @@
+
+
+NET "Clock" LOC = C9;
+NET "Resetn" LOC = H18;
+NET "w" LOC = K17;
+NET "z" LOC = F11;
+NET "y[2]" LOC = E12;
+NET "y[1]" LOC = F12;
+NET "Y[1]" LOC = E9;
+NET "Y[2]" LOC = F9;
+
+
+NET "Resetn" PULLUP;
+NET "Resetn" IOSTANDARD = LVTTL;
+NET "w" PULLDOWN;
+
+# PlanAhead Generated IO constraints 
+
+NET "y[2]" IOSTANDARD = LVTTL;
+NET "y[1]" IOSTANDARD = LVTTL;
+NET "Y[2]" IOSTANDARD = LVTTL;
+NET "Y[1]" IOSTANDARD = LVTTL;
+NET "Clock" IOSTANDARD = LVTTL;
+NET "w" IOSTANDARD = LVTTL;

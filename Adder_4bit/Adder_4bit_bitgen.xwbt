@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\ic\Adder_4bit\Adder_4bit.ncd
+OUTFILE=E:\ic\Adder_4bit\Adder_4bit.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=E:\ic\Adder_4bit
+LICENSE=ISE
+USER_INFO=212268666_0_0_122

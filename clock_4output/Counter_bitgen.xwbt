@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\ic\clock_4output\Counter.ncd
+OUTFILE=E:\ic\clock_4output\Counter.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=E:\ic\clock_4output
+LICENSE=ISE
+USER_INFO=212268666_0_0_122

@@ -1,0 +1,5 @@
+set -tmpdir "E:/ic/FSM/xst/projnav.tmp"
+set -xsthdpdir "E:/ic/FSM/xst"
+elaborate
+-ifn Counter8bs.prj
+-ifmt mixed

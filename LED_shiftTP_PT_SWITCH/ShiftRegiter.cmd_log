@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "E:/ic/LED_shiftTP_PT_SWITCH/ShiftRegiter.xst" -ofn "E:/ic/LED_shiftTP_PT_SWITCH/ShiftRegiter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 ShiftRegiter.ngc ShiftRegiter.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ShiftRegiter_map.ncd ShiftRegiter.ngd ShiftRegiter.pcf 
+par -w -intstyle ise -ol high -t 1 ShiftRegiter_map.ncd ShiftRegiter.ncd ShiftRegiter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ShiftRegiter.twx ShiftRegiter.ncd -o ShiftRegiter.twr ShiftRegiter.pcf 
+bitgen -intstyle ise -f ShiftRegiter.ut ShiftRegiter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ShiftRegiter.ucf -p xc3s500e-fg320-4 ShiftRegiter.ngc ShiftRegiter.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ShiftRegiter.ucf -p xc3s500e-fg320-4 ShiftRegiter.ngc ShiftRegiter.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ShiftRegiter_map.ncd ShiftRegiter.ngd ShiftRegiter.pcf 
+par -w -intstyle ise -ol high -t 1 ShiftRegiter_map.ncd ShiftRegiter.ncd ShiftRegiter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ShiftRegiter.twx ShiftRegiter.ncd -o ShiftRegiter.twr ShiftRegiter.pcf -ucf ShiftRegiter.ucf 
+bitgen -intstyle ise -f ShiftRegiter.ut ShiftRegiter.ncd 
+xst -intstyle ise -ifn "E:/ic/LED_shiftTP_PT_SWITCH/ShiftRegiter.xst" -ofn "E:/ic/LED_shiftTP_PT_SWITCH/ShiftRegiter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ShiftRegiter.ucf -p xc3s500e-fg320-4 ShiftRegiter.ngc ShiftRegiter.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ShiftRegiter_map.ncd ShiftRegiter.ngd ShiftRegiter.pcf 
+par -w -intstyle ise -ol high -t 1 ShiftRegiter_map.ncd ShiftRegiter.ncd ShiftRegiter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ShiftRegiter.twx ShiftRegiter.ncd -o ShiftRegiter.twr ShiftRegiter.pcf -ucf ShiftRegiter.ucf 
+bitgen -intstyle ise -f ShiftRegiter.ut ShiftRegiter.ncd 
